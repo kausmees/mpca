@@ -131,6 +131,13 @@ There is also the file [examples/data/HO_superpopulations](examples/data/HO_supe
 
 **NOTE:** This file is not part of the Human Origins publication and may contain errors and mislabeled populations.
 
+Read genotypes and sample info from file
+```python
+genotypes, ind_pop_list = read_from_EIGENSTRAT("data/HumanOrigins249_tiny.eigenstratgeno", "data/HumanOrigins249_tiny.fam")
+```
+
+
+
 >*<font size="-1">**Genomic insights into the origin of farming in the ancient Near East**
 Lazaridis et.al.
 Nature 2016</font>
@@ -164,8 +171,8 @@ scores_train = pm.scores
 Utilities to sort scores by population, define a style mapping, and plot accordingly
 ```python
 scores_train_by_pop = get_scores_by_pop(scores_train, ind_pop_list_train)
-style_dict = get_plot_style(pop_superpop_file, "plots/legend_HO.png", width=1.6, height=1.9, markersize=50, fontsize=6)
-plot_scores(scores_train_by_pop, style_dict, pop_superpop_file, markersize=30, figsize=(9,8))
+style_dict = get_plot_style(pop_superpop_file, "plots/legend_HO.png")
+plot_scores(scores_train_by_pop, style_dict, pop_superpop_file)
 
 plt.savefig("plots/pca.HumanOrigins2067_short.png", bbox_inches="tight")
 ```
@@ -174,9 +181,7 @@ plt.savefig("plots/pca.HumanOrigins2067_short.png", bbox_inches="tight")
 ##### Illustration of estimated scores
 
 
-Ten test samples from **HumanOrigins249_tiny** with 40% of genotypes removed, and scores estimated using the PMP method.
-
-Train samples plotted according to the population legend above.
+Plot of ten test samples from **HumanOrigins249_tiny** with 40% of genotypes removed, and scores estimated using the PMP method. Train samples plotted according to the population legend above.
 
 ![est_scores](examples/plots/estimated_scores_HumanOrigins249_tiny_20_test_0.4.png)
 
