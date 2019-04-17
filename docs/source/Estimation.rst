@@ -1,0 +1,7 @@
+Estimation
+===================
+.. toctree::
+
+    lsq
+    pcamodel
+
