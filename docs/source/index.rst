@@ -19,6 +19,9 @@ where **t** are the true scores of **z**
 (true scores defined as the scores obtained from the PCA model when all data of **z** is observed)
 
 
+The methods are implemented to be general, but mpca also contains utilities for handling PCA of genotype data.
+See the `GitHub page <https://github.com/kausmees/mpca/>`_ for code examples of different use-cases.
+
 Contents
 ==================
 

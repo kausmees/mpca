@@ -1,9 +1,6 @@
 # mpca
-methods to handle missing data in PCA
 
-
-Problem
-=======
+##### - methods to handle missing data in PCA
 
 mpca contains implementations of various methods to solve the following general problem:
 
@@ -22,9 +19,16 @@ s.t. the difference **t'** - **t** is minimized
 
 where **t** are the true scores of **z**
 
-(true scores defined as the scores obtained from the PCA model when all data of **z** is observed)
+
+(true scores are defined as the scores obtained from the PCA model when all data of **z** is observed)
 
 </div>
+
+
+The methods are implemented to be general, but mpca also contains utilities for handling PCA of genotype data.
+
+See below for examples of how to work with PCAs with different data sets (with full code in [examples/](examples/)), and the [readthedocs](https://mpca.readthedocs.io/en/latest/index.html) for the documentation.
+
 
 
 Methods
@@ -111,7 +115,7 @@ the only supported format.  See [EIGENSOFT GITHUB](https://github.com/DReichLab/
 
 
 
-##### Data
+#### Data
 [examples/data](examples/data/ ) contains two sets of data derived from the Human Origins dataset*
 
 1. **HumanOrigins249_tiny**: 249 samples at chromosomes 20-22
@@ -146,7 +150,7 @@ Nature 2016</font>
 
 
 
-##### Visualization
+#### Visualization
 
 [mpca/utils](mpca/utils) contains utilities for plotting scores according to population and superpopulation.
 
@@ -178,7 +182,7 @@ plt.savefig("plots/pca.HumanOrigins2067_short.png", bbox_inches="tight")
 ```
 
 
-##### Illustration of estimated scores
+#### Illustration of estimated scores
 
 
 Plot of ten test samples from **HumanOrigins249_tiny** with 40% of genotypes removed, and scores estimated using the PMP method. Train samples plotted according to the population legend above.
