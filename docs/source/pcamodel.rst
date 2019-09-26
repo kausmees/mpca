@@ -1,6 +1,6 @@
 PCA model
 ===================
-.. automodule:: mpca.estimate.pcamodel
+.. automodule:: mpca.pcamodel
    :members:
 
 

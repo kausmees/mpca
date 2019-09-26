@@ -1,4 +1,4 @@
-Visualization utils
+visualization utils
 ===================
 .. automodule:: mpca.utils.visualization
    :members:

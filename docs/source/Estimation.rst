@@ -1,7 +1,7 @@
-Estimation
+mpca
 ===================
 .. toctree::
 
-    lsq
+    estimate
     pcamodel
 

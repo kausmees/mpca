@@ -1,4 +1,4 @@
-Data-handling utils
+data-handling utils
 ===================
 .. automodule:: mpca.utils.datahandling
    :members:

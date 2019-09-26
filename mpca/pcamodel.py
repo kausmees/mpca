@@ -1,4 +1,4 @@
-from ..utils.datahandling import read_h5, write_h5
+from mpca.utils.datahandling import read_h5, write_h5
 from sklearn.decomposition import PCA
 import numpy as np
 
